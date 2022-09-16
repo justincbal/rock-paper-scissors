@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body {font-family: 'Bangers', cursive;
+background-color: #212121;
+color: #FF4545;
+margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.title {
+    
+    font-size: 100px;
+    text-align: center;
+    background-color: #1E1C1C;
+    padding: 15px;
+}
+
+.battle-ground {
+    outline: white solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.battle-ground div {
+    flex: 1;
+}
+
+/* OPTIONS: ROCK PAPER OR SCISSORS*/
+img {
+    height: 200px;
+    width: 200px;
+    border: solid;
+    border-radius: 20px;
+}
+img:hover {
+    scale: 1.1;
+    border: solid;
+    border-radius: 20px;
+    border-width: 6px;
+}
+
+.options {
+    display: flex;
+    height: 600px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    gap: 100px;
+}
+
+.options div {
+    scale: 1.1;
+}
+
+/* Player */
+
+.player {
+    text-align: left;
+    font-size: 32px;
+}
