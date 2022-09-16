@@ -39,10 +39,16 @@ function playRound(player, computer) {
 function game() {
     computerChosen = computerChoice();
     let huh = playRound(optionChosen, computerChosen);
-    console.log(optionChosen);
-    console.log(computerChosen);
+    console.log(`You chose: ${optionChosen}`);
+    console.log(`Computer chose: ${computerChosen}`);
     console.log(huh);
+    console.log(`Player Score: ${win}`);
+    console.log(`Computer Score: ${lose}`);
 
 }
 
-window.addEventListener('click', game);
+playerChoice.forEach((choice) => {  // Handles player choice
+    choice.addEventListener('click', game)
+
+    
+})
