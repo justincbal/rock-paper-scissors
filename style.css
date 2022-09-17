@@ -8,7 +8,6 @@ margin: 0;
 .content {
     display: flex;
     flex-direction: column;
-    gap: 50px;
 }
 
 .title {
@@ -20,14 +19,13 @@ margin: 0;
 }
 
 .battle-ground {
-    outline: white solid;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
 .battle-ground div {
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 /* OPTIONS: ROCK PAPER OR SCISSORS*/
@@ -52,23 +50,43 @@ img:hover {
     text-align: center;
     font-size: 32px;
     gap: 100px;
+    margin: 0px 500px;
 }
 
 .options div {
     scale: 1.1;
 }
 
-/* Player */
-
-.player-display {
-    text-align: left;
+/* Scoreboard */
+.score-board {
     display: flex;
-    flex-direction: column;
-    font-size: 32px;
+    flex-direction: row;
+    font-size: 60px;
+    margin: 0 500px;
 }
 
-.player-display > div { outline: red solid}
+.score {
+    background-color: #FF4545;
+    color: #1E1C1C;
+    text-align: center;
+}
 
-.player-name {
+.player, .computer {
+    background-color:#1E1C1C;
+}
+
+.score-board > div {
     flex: 1 1 auto;
+}
+
+.computer {
+    text-align: end;
+}
+
+
+/* End display */
+.end-message {
+    text-align: center;
+    font-size: 100px;
+    padding: 50px
 }
