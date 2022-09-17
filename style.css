@@ -62,7 +62,8 @@ img:hover {
     display: flex;
     flex-direction: row;
     font-size: 60px;
-    margin: 0 500px;
+    margin: 0 100px;
+    gap: 5px;
 }
 
 .score {
@@ -76,7 +77,7 @@ img:hover {
 }
 
 .score-board > div {
-    flex: 1 1 auto;
+    flex: 1 1 200px;
 }
 
 .computer {
