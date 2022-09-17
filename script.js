@@ -15,10 +15,10 @@ buttons.forEach( (btn) => {
         if (btn.className == 'paper btn') {playerSelection = 'paper';}
         if (btn.className == 'scissors btn') {playerSelection = 'scissors';}
 
-        if (win == 5 || lose == 5) { // Resets game 
-           location.reload();
+        // if (win == 5 || lose == 5) { // Resets game 
+        //    location.reload();
             
-        }
+        // }
         playRound();
     })
 });
@@ -54,10 +54,18 @@ function playRound() {
 
     if (win == 5) {
         endMssg.textContent = 'YOU WIN!';
+        reset();
+        
     } else if (lose == 5) {
         endMssg.textContent = 'YOU LOSE!';
-    } else if (win == lose && win == 5) { endMssg.textContent = 'DRAW!';}
+        reset();
+    } else if (win == lose && win == 5) { endMssg.textContent = 'DRAW!'; reset();}
 
+}
+
+function reset() {
+    win = 0;
+    lose = 0;
 }
 
 
