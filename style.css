@@ -60,7 +60,15 @@ img:hover {
 
 /* Player */
 
-.player {
+.player-display {
     text-align: left;
+    display: flex;
+    flex-direction: column;
     font-size: 32px;
+}
+
+.player-display > div { outline: red solid}
+
+.player-name {
+    flex: 1 1 auto;
 }
